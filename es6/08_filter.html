@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       let arr = [ 10,20,30,40,50 ]
+       let data = [
+            {id:1, name:'김철수'},
+            {id:2, name:'김다미'},
+            {id:3, name:'김태리'},
+            {id:4, name:'강호동'},
+            {id:5, name:'유재석'}
+       ]
+       
+        //    arr.filter( (현재값) => {
+        //         return 조건
+        //    })
+
+        // 결과가 배열
+        const re1 = arr.filter( item => {
+            return item > 30
+        })
+        console.log(re1)
+
+        const re2 = arr.filter( item => item > 20 )
+        console.log(re2)
+
+        // 30을 제외하고 출력
+        const re3 = arr.filter( item => item !== 30 )
+        console.log(re3)
+
+        const re4 = data.filter( item => item.id !== 2 )
+        console.log(re4)
+    </script>
+
+
+    <pre>
+
+        구문
+        arr.filter(callback(element[, index[, array]])[, thisArg])
+        조건에 맞는 새로운 배열로 반환
+
+        매개변수
+        callback : 함수
+        true를 반환하면 요소를 유지하고,
+        false를 반환하면 버립니다.
+
+        반환 값
+        테스트를 통과한 요소로 이루어진 새로운 배열.
+        어떤 요소도 테스트를 통과하지 못했으면 빈 배열을 반환합니다.
+
+    </pre>
+</body>
+</html>

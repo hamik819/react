@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const arr = ['김태리', '김다미', '최우식']
+        const arr1 = arr.concat()
+        const arr2 = [...arr]
+        console.log( arr1 )
+        console.log( arr2 )
+        console.log( '\n' )
+
+        const arr3 = arr.concat('유재석', '강호동')
+        const arr4 = [ ...arr, '이젠', '재석']
+        console.log( arr3 )
+        console.log( arr4 )
+        console.log( '\n' )
+
+        const ani = {
+            name: '강아지',
+            age: 2
+        }
+
+        // 갱신
+        const data = { ...ani, name:'고양이', age:1 }
+        console.log(data)
+    </script>
+
+
+    <pre>
+
+        
+
+    </pre>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const done1 = true
+        const done2 = false
+        const done3 = undefined
+
+        const re1 = done1 === true ? '참' : '거짓'
+        console.log(re1);
+
+        const re2 = done1 === true && '참결과'
+        console.log(re2)
+
+        const re3 = done2 || '거짓결과'
+        console.log(re3)
+
+        const re4 = done3 || '값이 존재하지 않는다'
+        console.log(re4)
+
+    </script>
+    <pre>
+        jsx영역
+            삼항연산자
+                (조건) ? (참) : (거짓)
+            &&
+                (조건) && 참결과
+            다중 if문 처리
+                (조건1) && 결과1
+                (조건2) && 결과2
+                (조건3) && 결과3
+                (조건4) && 결과4
+            ||
+                (조건) || 거짓결과
+    </pre>
+</body>
+</html>

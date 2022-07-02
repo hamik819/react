@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let data = [
+            {id:1, name:'김철수'},
+            {id:2, name:'김다미'},
+            {id:3, name:'김태리'},
+            {id:4, name:'강호동'},
+            {id:5, name:'유재석'}
+       ]
+
+        let data1 = data.concat()
+        let data2 = [ ...data ]
+        let data3 = data.concat({id:6, name:'이철수'})
+        let data4 = [...data, {id:6, name:'하하'}]
+        console.log(data3);
+        console.log(data4);
+
+        // data 1번 김철수를 최우식으로 수정
+        let data5 = data.map( item => {
+            if(item.id === 1) {
+                return {
+                    ...item ,
+                    name: '최우식'
+                }
+            }else{
+                return item
+            }
+        })
+        console.log(data5)
+
+        let data6 = data.map ( item => item.id === 2 ? {...item, name:'김을동'} : item)
+        console.log(data6)
+    </script>
+
+
+    <pre>
+
+        
+
+    </pre>
+</body>
+</html>

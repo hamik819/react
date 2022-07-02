@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       const arr = [ 10,20,30,40 ]
+       arr.map(function( item , idx ){
+            return (console.log( idx, item ))
+       })
+       arr.map(( item, idx ) => {
+            return console.log( idx,item )
+       })
+        // 결과가 하나일때
+       arr.map( (item, idx) => console.log(idx,item) )
+    </script>
+
+
+    <pre>
+        Array.prototype.map()
+
+        map() 메서드는 배열 내의 모든 요소 각각에 대하여 주어진 함수를 호출한 결과를 모아 새로운 배열을 반환합니다.
+
+        구문
+        arr.map(callback(currentValue[, index[, array]])[, thisArg])
+        
+        매개변수
+        callback : 함수
+        currentValue : 현재 요소
+        index Optional : 인덱스
+
+        반환 값 : 새로운 배열
+    </pre>
+</body>
+</html>

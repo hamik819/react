@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       let arr = [ 10,20,30,40,50 ]
+       let data = [
+            {id:1, name:'김철수'},
+            {id:2, name:'김다미'},
+            {id:3, name:'김태리'},
+            {id:4, name:'강호동'},
+            {id:5, name:'유재석'}
+       ]
+       
+       const re1 = arr.find( item => item === 20)
+       console.log( re1 )
+
+       let re2 = data.find( item => item.id === 3 )
+       console.log( re2 )
+    </script>
+
+
+    <pre>
+
+        find / findIndex
+
+        arr.find(callback[, thisArg])
+        arr.find( 현재요소 => 조건 )
+
+        매개변수
+        callback : 함수
+        element : 현재 요소
+
+        반환 값
+        첫 번째 요소의 값
+
+    </pre>
+</body>
+</html>
